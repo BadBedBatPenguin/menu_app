@@ -1,0 +1,13 @@
+{% load repeat %}
+<tr>
+    <td>
+      {{ "-"|repeat:node.level }}
+      <a href="{% url 'menus:menus' node.id %}">
+        {% if node.id == current_node_id %}
+            <b>{{ node.text }}</b>
+        {% else %}
+            {{ node.text }}
+        {% endif %}
+    </a><br>
+    </td>
+</tr>

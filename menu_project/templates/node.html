@@ -1,0 +1,9 @@
+<ul>
+    <li>
+        <a href="{% url 'menus:test' node.id %}" margin-left: {{ node.level }}0px>
+            {% if active == True %}<b>{{ node.text }}</b>{% else %}
+            {{ node.text }}
+            {% endif %}
+        </a>
+    </li>
+</ul>

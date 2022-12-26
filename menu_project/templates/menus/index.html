@@ -1,0 +1,6 @@
+{% load draw_menu %}
+<ul>
+    {% for root in roots  %}
+        {% draw_menu root.text %}
+    {% endfor %}
+</ul>
